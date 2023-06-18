@@ -1,77 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Non-Profit Group</title>
-  <link rel="stylesheet" href="style.css">
+  <title>SproutLove</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
+    <div class="heart-animation"></div>
+    <h1>Sprout<span class="heart"></span>Love</h1>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home">
-    <div class="container">
-      <h1>Your Non-Profit Group</h1>
-      <p>Welcome to our website. We are dedicated to making a positive impact in our community.</p>
-      <a href="#contact" class="btn">Get Involved</a>
-    </div>
-  </section>
+  <main>
+    <section id="home">
+      <h2>Welcome to Sprout<span class="heart"></span>Love</h2>
+      <article>
+        <h3>About Us</h3>
+        <p>SproutLove is an environmental organization that focuses on conserving the environment through tree planting and community empowerment.</p>
+        <a href="#about" class="button">Learn More</a>
+      </article>
+    </section>
 
-  <section id="about">
-    <div class="container">
+    <section id="about">
       <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula non mauris rhoncus accumsan at eget libero.</p>
-    </div>
-  </section>
+      <article>
+        <h3>Our Mission</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur maximus lectus ac volutpat. Nam laoreet massa vel tristique vestibulum.</p>
+        <div class="slideshow-container">
+          <div class="slide">
+            <img src="https://www.google.com/search?q=gardening+community&rlz=1C1ONGR_enUS1053US1053&sxsrf=APwXEde6NtSPP3wFNBFUj6hKWBY971EU9w:1687101598477&tbm=isch&source=iu&ictx=1&vet=1&fir=o9WS0LzNYmnuoM%252CR3u3sX6qhRcKdM%252C_%253BvWc28e5kAaJlUM%252Cs7dmLq29YZgYvM%252C_%253BEjC7X_8HsF3nNM%252CVsQfYmEZeS5QkM%252C_%253B5J-bIo3J1zwkSM%252CcHQlUJiWyw4HvM%252C_&usg=AI4_-kR5wI3PYTFPsoM0hKK7sMfirBPfug&sa=X&ved=2ahUKEwivmOibj83_AhVrmGoFHXz4AjEQ_h16BAhWEAE#imgrc=5J-bIo3J1zwkSM" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="organicgarden.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="image3.jpg" alt="Image 3">
+          </div>
+        </div>
+      </article>
+    </section>
 
-  <section id="services">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="card-container">
-      <div class="card">
-        <img src="service1.jpg" alt="Service 1">
-        <h3>Service 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula non mauris rhoncus accumsan at eget libero.</p>
-      </div>
-      <div class="card">
-        <img src="service2.jpg" alt="Service 2">
-        <h3>Service 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula non mauris rhoncus accumsan at eget libero.</p>
-      </div>
-      <div class="card">
-        <img src="service3.jpg" alt="Service 3">
-        <h3>Service 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula non mauris rhoncus accumsan at eget libero.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <section id="contact">
-    <div class="container">
+    <section id="contact">
       <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Message"></textarea>
-        <button type="submit" class="btn">Send</button>
-      </form>
-    </div>
-  </section>
+      <article>
+        <h3>Get in Touch</h3>
+        <p>If you have any questions or inquiries, please feel free to contact us using the form below:</p>
+        <form action="submit_form.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </article>
+    </section>
+
+    <section id="volunteer">
+      <h2>Volunteer</h2>
+      <article>
+        <h3>Join Our Team</h3>
+        <p>If you are passionate about the environment and want to make a difference, we welcome you to join our volunteer program. Together, we can create a greener future.</p>
+        <a href="#contact" class="button">Get Involved</a>
+      </article>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2023 Your Non-Profit Group. All rights reserved.</p>
+    &copy; 2023 SproutLove All rights reserved.
   </footer>
-
-  <script src="script.js"></script>
 </body>
+
 </html>
